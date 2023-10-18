@@ -16,6 +16,95 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: none;
+}
+#comment{
+    height: 50px;
+    width: 50px;
+    background-color: #000;
+    border-radius: 50%;
+    position: relative;
+    bottom: -42%;
+    right: -21%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scale: 1;
+    transition: all linear 0.2s;
+    color: #fff;
+}
+#comment:hover{
+    box-shadow: 0 0 10px #888;
+    background-color: #fff;
+    color: #000;
+}
+#pDIV{
+    position: absolute;
+    bottom: 0;
+    left: 28%;
+    font-size: 20px;
+}
+#aEdiv{
+    position: absolute;
+    top: 38%;
+    left: 24%;
+}
+#navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#navL{
+    margin: 0 2rem;
+    font-size: 25px;
+    font-weight: 900;
+    position: relative;
+    z-index: 100;
+    user-select: none;
+    cursor: pointer;
+}
+#navR{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1.5rem;
+    margin-right: 2rem;
+}
+#navR a{
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    z-index: 100;
+    /* font-size: 18px; */
+    /* mix-blend-mode: difference; */
+}
+#hamburger{
+    height: 15px;
+    width: 15px;
+    position: relative;
+    z-index: 100;
+    cursor: pointer;
+}
+.bar{
+    height: 2px;
+    width: 15px;
+    background-color: #000;
+    border-radius: 20px;
+}
+#bar1{
+    position: absolute;
+    top: 30%;
+    left: 0;
+}
+#bar2{
+    position: absolute;
+    top: 70%;
+    left: 0;
 }
 .elem{
     height: 50vh;
@@ -44,6 +133,7 @@ html,body{
     color: #fff;
     text-transform: uppercase;
     mix-blend-mode: difference;
+    font-family: 'Gilroy-Regular';
 }
 .overlay{
     position: absolute;
@@ -55,9 +145,11 @@ html,body{
 #cursor{
     height: 15px;
     width: 15px;
-    background-color: #00f;
+    background-color: #000;
     position: absolute;
     border-radius: 50%;
     z-index: 99;
-    transition: all linear .2s;
+    /* transition: all linear .2s; */
+    top: -10%;
+    left: 50%;
 }
